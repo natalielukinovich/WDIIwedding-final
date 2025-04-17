@@ -7,12 +7,171 @@
         <link rel="stylesheet" href="css/fontawesome.css"/>
         <link rel="stylesheet" href="css/bootstrap.css"/>
         <link rel="stylesheet" href="css/styles.css">
-        <title>Bootstrap 5 Starter</title>
+        <title>Amelia and Benjamin</title>
     </head>
     <body>
-        <h1>Hello World!!!!</h1>
-        <i class="fas fa-star"></i>
-        <button class="btn btn-primary">Submit</button>
-        <script src="js/script.js"></script>
+     <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+            <div class="container">
+             <a href="index.html" class="navbar-brand">
+               <img src="images/logo.png" alt="" width="139">
+             </a>
+             <ul class="navbar-nav ms-auto">
+             <li class="nav-item">
+               <a href="#schedule" class="nav-link fw-bold">Schedule</a>
+             </li>
+             <li class="nav-item">
+               <a href="#registry" class="nav-link fw-bold">Registry</a>
+             </li>
+             <li class="nav-item">
+                <a href="#gallery" class="nav-link fw-bold">Gallery</a>
+              </li>
+             <li class="nav-item">
+               <a href="#rsvp" class="nav-link btn btn-outline-light fw-bold px-4 mx-4">RSVP</a>
+             </li>
+           </ul>
+            </div>
+        </nav>
+
+     <!-- Header -->
+    <header class="pt-5">
+        <div>
+            <img src="images/footer-heart.png" alt="">
+            <h1>amelia + benjamin</h1>
+            <p>06.29.25 | Nashville, TN | 4-10 pm</p>
+            <a href="#rsvp" class="btn">Send Your RSVP</a>
+            <img src="images/hero-heart.png" alt="">
+        </div>
+    </header>
+
+    <!-- Schedule -->
+     <section id="schedule">
+        <img src="images/schedule-lg.png" alt="">
+        <h2>The Schedule</h2>
+            <div>
+                <h3>Ceremony</h3>
+                <h4>4:00 pm</h4>
+                <p>Wightman Chapel at Scarritt Bennett Center</p>
+                <p>1027 18th Ave S <br> Nashville, TN 37212</p>
+            </div>
+            <div>
+                <h3>Reception</h3>
+                <h4>4:30-10:00 pm</h4>
+                <p>The Bridge Building Event Spaces</p>
+                <p>2 Victory Ave #100<br> Nashville, TN 37212</p>
+            </div>
+     </section>
+
+
+    <!-- RSVP -->
+     <section id="rsvp">
+        <div>
+            <h2>RSVP</h2>
+            <p>We're getting married, and we want you to celebrate with us.</p>
+        </div>
+        <form action="https://formspree.io/f/mldjakdb" method="POST">
+            <div>
+                <label for="yname">Your Name</label>
+                <input type="text" class="form-control form-control-lg" id="yname" name="name" placeholder="Your First and Last Name">
+            </div>
+            <div>
+                <label for="noguests">Number of Guests Attending</label><br>
+                <select name="number of guests" id="noguests">
+                  <option disabled hidden selected value="">Select an option</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+            </div>
+            <div>
+                <label for="response">Response</label><br>
+                <select name="response" id="response">
+                  <option disabled hidden selected value="">Select an option</option>
+                  <option value="accept">Joyfully Accept</option>
+                  <option value="decline">Regretfully Decline</option>
+                </select>
+            </div>
+            <div>
+                <label for="note">Add a Personal Note</label><br>
+                <textarea class="form-control form-control-lg" id="note" name="message" rows="6" placeholder="Leave a piece of marriage advice, your favorite joke, or anything else you want to tell us!"></textarea>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary text-white mt-3">Send With Love
+                </button>
+            </div>
+        </form>
+     </section>
+
+    <!-- Registry -->
+     <section>
+        <div>
+            <h2>Gifts We'll Cherish</h2>
+            <p>More than anything, we want to have your with us on our special day. But here are a few other ways you can bless us.</p>
+            <a href="amazon.com" class="btn">Open Amazon Registry</a>
+        </div>
+        <div>
+            <img src="images/gifts-lg.png" alt="">
+        </div>
+     </section>
+
+
+    <!-- Gallery -->
+     <section>
+    <div>
+        <img src="images/gallery-heart.png" alt="">
+        <div>
+            <h2>Gallery of Love</h2>
+            <p>Here are some of our favorite moments, captured in the town we had our first date.</p>
+        </div>
+        <img src="images/schedule-heart.png" alt="">
+    </div>
+        <div>
+            <div class="scroll-container">
+                <img src="images/gallery-1-lg.png" alt="">
+                <img src="images/gallery-2-lg.png" alt="">
+                <img src="images/gallery-3-lg.png" alt="">
+                <img src="images/gallery-4-lg.png" alt="">
+                <img src="images/gallery-5-lg.png" alt="">
+                <img src="images/gallery-6-lg.png" alt="">
+                <img src="images/gallery-7-lg.png" alt="">
+            </div>
+        </div>
+     </section>
+
+    <!-- Footer -->
+     <footer>
+        <div>
+            <img src="images/logo.png" alt="">
+        </div>
+        <div>
+            <img src="images/hero-heart.png" alt="">
+            <div>
+                <h3>Contact Us</h3>
+                <a href="">123-456-7890</a><br>
+                <a href="">amelia@email.com</a>
+            </div>
+            <div>
+                <h3>Copyright &copy; 2025</h3>
+                <a href="">Privacy Statement</a>
+            </div>
+        </div>
+        <div>
+            <a href="#schedule">Schedule</a><br>
+            <a href="#registry">Registry</a><br>
+            <a href="#gallery">Gallery</a><br>
+            <a href="#rsvp" class="btn">RSVP</a>
+        </div>
+        <img src="images/footer-heart.png" alt="">
+     </footer>
+
+    
+
     </body>
 </html>
