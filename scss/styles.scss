@@ -1,5 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
 $primary: red;
 
+.bg-hero {
+    background-image: url("../images/hero-lg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90rem;
+}
+
+.btn-text {
+  font-size: 1.6rem;
+}
+
+.fs-12{
+  font-size: 12.8rem;
+}
 .pt-5 {
-    padding-top: 12rem !important;
+    padding-top: 30rem !important;
   }
+
+
+h1 {
+  font-family: 'Dawning of a New Day', cursive;
+}
+
+.h5 {
+  font-size: 1.6rem;
+}
+
+.h6 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.h6 p {
+  margin-left: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+body {
+  font-family: 'Lora', serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+.nav-item {
+  font-size: 1.6rem;
+}

@@ -1,5 +1,21 @@
-.pt-5 {
-    padding-top: 12rem !important;
-  }
+// Colors
+$primary: #826761;
+$secondary: #c39f96;
+$dark: #221715;
+$light: #fffcfa;
+
+// Spacers
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6,
+  7: $spacer * 8,
+  8: $spacer * 12,
+) !default;
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
