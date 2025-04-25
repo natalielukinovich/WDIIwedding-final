@@ -10,12 +10,13 @@ $spacers: (
   0: 0,
   1: $spacer * .25,
   2: $spacer * .5,
-  3: $spacer,
+  3: $spacer * 2.5,
   4: $spacer * 1.5,
   5: $spacer * 3,
   6: $spacer * 6,
   7: $spacer * 8,
   8: $spacer * 12,
+  9: $spacer * 14,
 ) !default;
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';

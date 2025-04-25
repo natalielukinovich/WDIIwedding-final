@@ -18,13 +18,22 @@ $primary: red;
 .fs-12{
   font-size: 12.8rem;
 }
-.pt-5 {
+
+.pt-30rem {
     padding-top: 30rem !important;
   }
 
 
 h1 {
   font-family: 'Dawning of a New Day', cursive;
+}
+
+.h2-lg {
+font-size: 4.6rem;
+}
+
+.h3-lg {
+  font-size: 3.2rem;
 }
 
 .h5 {
@@ -52,4 +61,13 @@ html {
 
 .nav-item {
   font-size: 1.6rem;
+}
+
+.navbar-sticky {
+  opacity: 0.9;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.navbar {
+  transition: all 0.5s ease-in-out;
 }
