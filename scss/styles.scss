@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
-$primary: red;
 
 .bg-hero {
     background-image: url("../images/hero-lg.png");
@@ -51,6 +50,28 @@ font-size: 4.6rem;
   margin-top: 2.5rem;
 }
 
+.h7 {
+  font-size: 1.4rem;
+  color: #826761;
+}
+
+input::placeholder {
+  color: #826761;
+}
+
+input.form-control,
+textarea.form-control {
+  border: none;
+  border-bottom: 2px solid;
+  border-radius: 0;
+}
+
+input.form-control:focus,
+textarea.form-control:focus {
+  box-shadow: none;
+  border-bottom: 2px solid;
+}
+
 body {
   font-family: 'Lora', serif;
 }
@@ -70,4 +91,19 @@ html {
 
 .navbar {
   transition: all 0.5s ease-in-out;
+}
+
+select.form-control {
+  border: none;
+  border-bottom: 2px solid;
+  border-radius: 0;
+}
+
+select.form-control:focus {
+  box-shadow: none;
+  border-bottom: 2px solid;
+}
+
+.width-1 {
+  width: 22.8rem;
 }
