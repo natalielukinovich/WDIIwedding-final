@@ -16,6 +16,10 @@
   font-size: 12.8rem;
 }
 
+.flip-img {
+  transform: scaleX(-1) !important;
+}
+
 .pt-30rem {
   padding-top: 30rem !important;
 }
@@ -33,7 +37,7 @@ h1 {
 }
 
 .h5 {
-  font-size: 1.6rem;
+  font-size: 1.6rem !important;
 }
 
 .h6 {
@@ -65,8 +69,8 @@ textarea.form-control {
 
 input.form-control:focus,
 textarea.form-control:focus {
-  box-shadow: none;
-  border-bottom: 2px solid;
+  box-shadow: none !important;
+  border-bottom: 2px solid !important;
 }
 
 body {
@@ -88,6 +92,12 @@ html {
 
 .navbar {
   transition: all 0.5s ease-in-out;
+}
+
+select {
+  appearance: auto !important;
+  -webkit-appearance: auto !important;
+  -moz-appearance: auto !important;
 }
 
 select.form-control {

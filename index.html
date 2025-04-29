@@ -12,7 +12,7 @@
     </head>
     <body>
      <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg fixed-top navbar-dark h5 pt-4 pb-1">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark h5 pt-2 pb-2">
             <div class="container">
              <a href="#hero" class="navbar-brand">
                <img src="images/logo.png" alt="" width="139">
@@ -107,11 +107,11 @@
             <form class="mt-5" action="https://formspree.io/f/mldjakdb" method="POST">
                 <div class="mb-3">
                     <label class="h5 fw-lighter" for="yname">Your Name</label>
-                    <input type="text" class="form-control form-control-lg bg-dark border-bottom text-secondary ps-0" id="yname" name="name" placeholder="Your First and Last Name">
+                    <input type="text" class="form-control form-control-lg bg-dark border-bottom border-light text-secondary ps-0" id="yname" name="name" placeholder="Your First and Last Name">
                 </div>
                 <div class="mb-3">
                     <label class="h5 fw-lighter" for="noguests">Number of Guests Attending</label><br>
-                    <select class="bg-dark h7 fw-lighter text-primary border-bottom w-100" name="number of guests" id="noguests">
+                    <select class="form-control bg-dark h7 fw-lighter text-primary border-bottom w-100" name="number of guests" id="noguests">
                       <option disabled hidden selected value="">Select an option</option>
                       <option value="1">1</option>
                       <option value="2">2</option>
@@ -127,7 +127,7 @@
                 </div>
                 <div class="mb-3">
                     <label class="h5 fw-lighter" for="response">Response</label><br>
-                    <select class="bg-dark h7 fw-lighter text-primary border-bottom w-100" name="response" id="response">
+                    <select class="form-control bg-dark h7 fw-lighter text-primary border-bottom bw-100" name="response" id="response">
                       <option disabled hidden selected value="">Select an option</option>
                       <option value="accept">Joyfully Accept</option>
                       <option value="decline">Regretfully Decline</option>
@@ -151,7 +151,7 @@
             <img src="images/gallery-heart.png" alt="" class="mb-4">
             <h2 class="text-primary h2-lg fw-lighter">Gifts We'll Cherish</h2>
             <p class="h5 fw-lighter w-75 mx-auto mt-3">More than anything, we want to have you with us on our special day. But here are a few other ways you can bless us.</p>
-            <a href="amazon.com" class="h5 btn btn-dark btn-lg text-light fw-medium px-5 py-2 mt-3">Open Amazon Registry</a>
+            <a href="" class="h5 btn btn-dark btn-lg text-light fw-medium px-5 py-2 mt-3">Open Amazon Registry</a>
           </div>
         <div class="col-lg-4">
             <img src="images/gifts-lg.png" alt="">
@@ -184,31 +184,53 @@
      </section>
 
     <!-- Footer -->
-     <footer class="bg-dark mt-9 pt-7">
+     <footer class="bg-dark mt-9 pt-7 pb-8 mx-auto">
         <div class="mx-auto text-center">
           <a href="#hero">
             <img src="images/logo.png" alt="" width="139">
           </a>
         </div>
-        <div>
-            <img src="images/hero-heart.png" alt="">
-            <div>
-                <h3>Contact Us</h3>
-                <a href="">123-456-7890</a><br>
-                <a href="">amelia@email.com</a>
+
+        <!-- info -->
+        <div class="d-flex justify-content-center space-between align-items-center mt-10">
+            <img src="images/hero-heart.png" alt="" class="flip-img img-">
+
+            <!-- left -->
+            <div class="text-center ms-6 border-end border-light pe-7">
+              <div class="h5 lh-lg mb-10">
+                  <h3 class="text-light">Contact Us</h3>
+                  <a href="" class="text-decoration-none">123-456-7890</a><br>
+                  <a href="" class="text-decoration-none">amelia@email.com</a>
+              </div>
+            <div class="text-light h5">
+                <h3 class="lh-lg">Copyright &copy; 2025</h3>
+                <h3>
+                  <a href="" class="text-decoration-none text-light">Privacy Statement</a>
+                </h3>
             </div>
-            <div>
-                <h3>Copyright &copy; 2025</h3>
-                <a href="">Privacy Statement</a>
+          </div>
+
+        <!-- right -->
+            <div class="h5 text-center ms-8 me-7">
+              <div class="mb-5">
+                <a href="#schedule" class="text-decoration-none text-light">Schedule</a><br>
+              </div>
+              <div class="mb-5">
+                <a href="#registry" class="text-decoration-none text-light">Registry</a><br>
+              </div>
+              <div class="mb-5">
+                <a href="#gallery" class="text-decoration-none text-light">Gallery</a><br>
+              </div>
+              <div>
+                <a href="#rsvp" class="btn btn-light btn-lg text-dark btn-text fw-medium pt-2 pb-2 ps-5 pe-5 text-center">RSVP</a>
+              </div>
             </div>
-        </div>
-        <div>
-            <a href="#schedule">Schedule</a><br>
-            <a href="#registry">Registry</a><br>
-            <a href="#gallery">Gallery</a><br>
-            <a href="#rsvp" class="btn">RSVP</a>
-        </div>
+
+
         <img src="images/footer-heart.png" alt="">
+        </div>
+
+
      </footer>
 
     
