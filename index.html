@@ -15,16 +15,16 @@
         <nav class="navbar navbar-expand-lg fixed-top navbar-dark h5 pt-2 pb-2">
             <div class="container">
              <a href="#hero" class="navbar-brand">
-               <img src="images/logo.png" alt="" width="139">
+               <img src="images/logo.png" alt="" class="resp-logo">
              </a>
              <ul class="navbar-nav ms-auto">
-             <li class="nav-item">
+             <li class="nav-item d-none d-lg-flex">
                <a href="#schedule" class="nav-link fw-medium text-light me-6">Schedule</a>
              </li>
-             <li class="nav-item">
+             <li class="nav-item d-none d-lg-flex">
                <a href="#registry" class="nav-link fw-medium text-light me-6">Registry</a>
              </li>
-             <li class="nav-item">
+             <li class="nav-item d-none d-lg-flex">
                 <a href="#gallery" class="nav-link fw-medium text-light me-6">Gallery</a>
               </li>
              <li class="nav-item">
@@ -35,22 +35,35 @@
         </nav>
 
      <!-- Header -->
-    <header id="hero" class="pt-30rem bg-hero">
-        <div>
+    <header id="hero" class="bg-hero">
+        <div class="">
+          <div class="text-center">
+          <img src="images/footer-heart.png" class="d-flex d-md-none mx-auto img-fluid mb-2">
+        </div>
             <div class="d-flex justify-content-center align-items-center">
-                <img src="images/footer-heart.png" alt="" class="img-fluid">
-                <h1 class="fs-12 text-light">amelia + benjamin</h1>
-                <img src="images/hero-heart.png" alt="" class="img-fluid">
+                <img src="images/footer-heart.png" alt="" class="img-fluid d-none d-md-flex flip-img">
+                <h1 class="resp-hero-h1 text-light mx-5">amelia + benjamin</h1>
+                <img src="images/hero-heart.png" alt="" class="img-fluid d-none d-md-flex">
             </div>
             <div class="text-center">
-                <div class="d-flex justify-content-center space-between h6 text-secondary fw-light">
+                <div class="d-none d-md-flex justify-content-center space-between h6 text-secondary fw-light">
                     <p>06.29.25</p> 
                     <p>|</p> 
                     <p>Nashville, TN</p>
                     <p>|</p>
                     <p>4-10 pm</p>
                 </div>
-            <a href="#rsvp" class="btn btn-light btn-lg text-dark btn-text fw-medium pt-2 pb-2 ps-5 pe-5 mt-5 text-center">Send Your RSVP</a>
+                <div class="mx-auto text-center">
+                    <div class="d-flex d-md-none justify-content-center space-between display-6 text-uppercase text-secondary fw-light">
+                      <p>06.29.25</p> 
+                      <p class="mx-3">|</p> 
+                      <p>4-10 pm</p>
+                  </div>
+                  <div class="d-flex d-md-none justify-content-center space-between display-6 text-uppercase text-secondary fw-light">
+                    <p class="mt-1">Nashville, TN</p>
+                  </div>
+                </div>
+            <a href="#rsvp" class="btn btn-light btn-lg text-dark btn-text fw-medium pt-2 pb-2 ps-5 pe-5 mt-5">Send Your RSVP</a>
             </div>
         </div>
     </header>
@@ -61,28 +74,28 @@
           <div class="row align-items-center">
             <!-- img left -->
             <div class="col-lg-4 mb-4 mb-lg-0 mx-auto">
-              <img src="images/schedule-lg.png" alt="" class="img-fluid">
+              <img src="images/schedule-lg.png" alt="" class="img-fluid d-none d-lg-flex">
             </div>
       
             <!-- schedule right  -->
             <div class="col-lg-5 text-center mx-auto">
               <img src="images/gallery-heart.png" alt="" class="mb-4">
-              <h2 class="text-primary h2-lg fw-lighter">The Schedule</h2>
+              <h2 class="text-primary display-3 fw-lighter">The Schedule</h2>
       
               <div class="row mt-5">
                 <!-- Ceremony -->
-                <div class="col-md-6 mb-4">
-                  <h3 class="h3-lg fw-lighter">Ceremony</h3>
-                  <h4 class="h6 text-primary fw-lighter mt-4">4:00 pm</h4>
+                <div class="col-md-6 mb-4 mt-4 mt-lg-0 mt-md-0">
+                  <h3 class="display-6 fw-lighter">Ceremony</h3>
+                  <h4 class="h6 display-6 text-primary fw-lighter mt-4">4:00 pm</h4>
                   <p class="h5 fw-bold fst-italic mt-3">Wightman Chapel at<br>Scarritt Bennett Center</p>
                   <p class="h5 fw-lighter mt-2">1027 18th Ave S<br>Nashville, TN 37212</p>
                   <a href="#schedule" class="h5 btn btn-dark btn-lg text-lighter fw-medium px-5 py-2 mt-3">Get Directions</a>
                 </div>
       
                 <!-- Reception -->
-                <div class="col-md-6 mb-4">
-                  <h3 class="h3-lg fw-lighter">Reception</h3>
-                  <h4 class="h6 text-primary fw-lighter mt-4">4:30-10:00 pm</h4>
+                <div class="col-md-6 mb-4 mt-7 mt-lg-0 mt-md-0">
+                  <h3 class="display-6 fw-lighter">Reception</h3>
+                  <h4 class="h6 display-6 text-primary fw-lighter mt-4">4:30-10:00 pm</h4>
                   <p class="h5 fw-bold fst-italic mt-3">The Bridge Building<br>Event Spaces</p>
                   <p class="h5 fw-lighter mt-2">2 Victory Ave #100<br>Nashville, TN 37212</p>
                   <a href="#schedule" class="h5 btn btn-dark btn-lg text-lighter fw-medium px-5 py-2 mt-3">Get Directions</a>
@@ -91,27 +104,30 @@
             </div>
           </div>
         </div>
+        <div>
+          <img src="images/schedule-md.png" alt="" class="img-fluid d-flex d-lg-none mx-auto mt-14 w-100">
+        </div>
       </section>
 
 
     <!-- RSVP -->
      <section id="rsvp" class="bg-dark text-light">
-        <div class="col-lg-4 mx-auto mt-9 pt-9 pb-9 justify-content-center">
+        <div class="col-lg-4 mx-auto mt-lg-9 mt-0 pt-9 pb-9 justify-content-center">
           <div class="text-center">
                 <img src="images/footer-heart.png" alt="" class="img-fluid mx-auto mb-5">
-                <h2 class="h2-lg fw-lighter">RSVP</h2>
+                <h2 class="display-3 fw-lighter">RSVP</h2>
                 <p class="h5 fw-lighter w-75 mx-auto">We're getting married, and we want <em class="fw-bold fst-normal">you</em> to celebrate with us.</p>
             </div>
 
             <!-- rsvp form -->
-            <form class="mt-5" action="https://formspree.io/f/mldjakdb" method="POST">
+            <form class="mt-5 mx-auto col-lg-12 col-md-6 col-8" action="https://formspree.io/f/mldjakdb" method="POST">
                 <div class="mb-3">
                     <label class="h5 fw-lighter" for="yname">Your Name</label>
                     <input type="text" class="form-control form-control-lg bg-dark border-bottom border-light text-secondary ps-0" id="yname" name="name" placeholder="Your First and Last Name">
                 </div>
                 <div class="mb-3">
                     <label class="h5 fw-lighter" for="noguests">Number of Guests Attending</label><br>
-                    <select class="form-control bg-dark h7 fw-lighter text-primary border-bottom w-100" name="number of guests" id="noguests">
+                    <select class="form-control bg-dark h7 fw-lighter text-primary border-bottom w-100 ps-0" name="number of guests" id="noguests">
                       <option disabled hidden selected value="">Select an option</option>
                       <option value="1">1</option>
                       <option value="2">2</option>
@@ -127,7 +143,7 @@
                 </div>
                 <div class="mb-3">
                     <label class="h5 fw-lighter" for="response">Response</label><br>
-                    <select class="form-control bg-dark h7 fw-lighter text-primary border-bottom bw-100" name="response" id="response">
+                    <select class="form-control bg-dark h7 fw-lighter text-primary border-bottom bw-100 ps-0" name="response" id="response">
                       <option disabled hidden selected value="">Select an option</option>
                       <option value="accept">Joyfully Accept</option>
                       <option value="decline">Regretfully Decline</option>
@@ -149,28 +165,36 @@
         <div class="row justify-content-center mx-auto align-items-center">
           <div class="col-lg-5 text-center">
             <img src="images/gallery-heart.png" alt="" class="mb-4">
-            <h2 class="text-primary h2-lg fw-lighter">Gifts We'll Cherish</h2>
+            <h2 class="text-primary display-3 fw-lighter">Gifts We'll Cherish</h2>
             <p class="h5 fw-lighter w-75 mx-auto mt-3">More than anything, we want to have you with us on our special day. But here are a few other ways you can bless us.</p>
             <a href="" class="h5 btn btn-dark btn-lg text-light fw-medium px-5 py-2 mt-3">Open Amazon Registry</a>
           </div>
+
         <div class="col-lg-4">
-            <img src="images/gifts-lg.png" alt="">
+            <img src="images/gifts-lg.png" alt="" class="mt-7 mt-lg-0 mt-md-0 d-none d-lg-flex">
         </div>
+        </div>
+
+        <div">
+          <img src="images/gifts-sm.png" alt="" class="img-fluid d-flex d-lg-none mt-14 w-100 resp-img-reg">
         </div>
      </section>
 
 
     <!-- Gallery -->
      <section id="gallery" class="mt-9">
+      <div>
+        <img src="images/gallery-heart.png" alt="" class="d-flex d-lg-none mx-auto mb-11">
+      </div>
     <div class="d-flex justify-content-center align-items-center space-between mb-10">
-        <img class="pe-0 img-fluid" src="images/gallery-heart.png" alt="">
+        <img class="pe-0 img-fluid d-none d-lg-flex" src="images/gallery-heart.png" alt="">
         <div class="text-center col-lg-4">
-            <h2 class="text-primary h2-lg fw-lighter">Gallery of Love</h2>
+            <h2 class="text-primary display-3 fw-lighter">Gallery of Love</h2>
             <p class="h5 fw-lighter w-75 mx-auto mt-3">Scroll through some of our favorite moments, captured in the town we had our first date.</p>
         </div>
-        <img class="ps-0 img-fuid" src="images/schedule-heart.png" alt="">
+        <img class="ps-0 img-fuid d-none d-lg-flex" src="images/schedule-heart.png" alt="">
     </div>
-        <div class="container col-12 col-lg-12 col-md-8">
+        <div class="container col-lg-12 col-md-6 col-10 mx-auto">
             <div class="d-flex overflow-x-scroll gap-11">
                 <img src="images/gallery-1-lg.png" alt="">
                 <img src="images/gallery-2-lg.png" alt="">
@@ -193,10 +217,10 @@
 
         <!-- info -->
         <div class="d-flex justify-content-center space-between align-items-center mt-10">
-            <img src="images/hero-heart.png" alt="" class="flip-img img-">
+
 
             <!-- left -->
-            <div class="text-center ms-6 border-end border-light pe-7">
+            <div class="text-center ms-0 border-end border-light pe-7">
               <div class="h5 lh-lg mb-10">
                   <h3 class="text-light">Contact Us</h3>
                   <a href="" class="text-decoration-none">123-456-7890</a><br>
@@ -211,7 +235,7 @@
           </div>
 
         <!-- right -->
-            <div class="h5 text-center ms-8 me-7">
+            <div class="h5 text-center ms-7 me-6">
               <div class="mb-5">
                 <a href="#schedule" class="text-decoration-none text-light">Schedule</a><br>
               </div>
@@ -226,10 +250,9 @@
               </div>
             </div>
 
-
-        <img src="images/footer-heart.png" alt="">
         </div>
 
+        <img src="images/footer-heart.png" class="img-fluid mx-auto text-center">
 
      </footer>
 
